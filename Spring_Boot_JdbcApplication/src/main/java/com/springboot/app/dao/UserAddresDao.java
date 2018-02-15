@@ -30,6 +30,13 @@ public class UserAddresDao {
     }
     
    /*  This is with Named ParameterJdbcTemplate
+    *  Here we are using Lambda Expressions.These are usefull when ever we try to create a classs or inner class
+    *  which contains a method. for this we need to write the code even though we know that it will call the overrided
+    *  method in such a case we can use Lambda Expressions insted of that. so code will be less.it is mostly will
+    *  be applecable when we are implementing a interface wich contains a method with parameters or without parameters
+    *  there are certain rules are there
+    *  This will be usefull where ever we are implemeting the interface that contains one single method
+    *  Lambda Expression parameters and interface method parameters should be of same type in such a case we can with it
     *  public List<AddressBO> getUserAddress(int zipcode) {
   	  System.out.println("inside getUserAddress method");  
   	  List<AddressBO> listAddressBo = null;
